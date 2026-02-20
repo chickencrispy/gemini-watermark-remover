@@ -11,7 +11,7 @@
   "type": "module",
   "scripts": {
     "dev": "node build.js",
-    "build": "NODE_ENV=production node build.js",
+    "build": "cross-env NODE_ENV=production node build.js",
     "serve": "npx serve dist"
   },
   "dependencies": {
@@ -20,6 +20,7 @@
     "medium-zoom": "^1.1.0"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "esbuild": "^0.24.0"
   },
   "packageManager": "pnpm@10.11.0"
